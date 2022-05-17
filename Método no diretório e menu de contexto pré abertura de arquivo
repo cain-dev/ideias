@@ -1,0 +1,33 @@
+Isso ainda está fresco na minha mente então eu não sei exatamente como descrever isso mas... Eu estava usando o Ranger file manager e estava numa call com um amigo falando a respeito de aplicações terminocêntricas, e ele falou algo no sentido de "eu adoraria usar só isso, mas tem muitas coisas que eu ainda preciso de interface gráfica" e eu não vou lembrar exatamente as palavras mas seria como se ao invés de ter que colocar cada ação chamada por atalho numa tecla, utilizar o diretório mesmo como abstração para uma ação, por exemplo:
+
+Vamos supor que você está no diretório Wallpapers, e você está utilizando um gerenciador de arquivos com suporte a pré-visualização, se você seleciona o arquivo em questão, o que tende a acontecer? O sistema abre aquela imagem num visualizador, correto? Mas se é uma pasta de wallpapers presume-se que se você vai selecionar alguma imagem é justamente para fazer  dela um wallpaper, e dependendo do tipo de pré visualização se torna desnecessário abrir aquela foto para isso, é possível associar uma abertura de arquivos a uma extensão e também abrir "executar uma ação" com todo o conteúdo de uma pasta... Mas não seria mais eficiente adicionar uma função de execução padrão para aquele diretório?
+
+Imagina que ao invés de um menu de contexto para selecionar a ação padrão de uma extensão, você pudesse selecionar a ação padrão da seleção e menu de contexto específicos para aquele diretório, o quanto isso não facilitaria a sua vida?
+
+A um tempo atrás eu me lembro de ter visto um programa para Linux que ao ser associado a uma extensão de arquivo o que fazia era nada mais nada menos do que redirecionar, terceirizar a abertura daquele arquivo para outro programa, agora imagina esse conceito associado a um arquivo específico OU associado a um diretório.
+
+Imagina que você está lidando com um diretório de algum projeto, e determinado arquivo especifico você tem que abrir em mais de 1 programa (por exemplo, intercalar entre abrir um arquivo html no vscodium ou no navegador), e não uma associação de extensão, OU mesmo imagine um comando "abrir com: vscodium" associado não a extensão mas sim a um launcher.
+
+Geralmente em interfaces modernas, existe uma certa sequência de passos que você caminha para executar as ações, por exemplo:
+
+Abrir o gerenciador de arquivos > Navegar até a pasta de músicas > Duplo clique na música para abrir no tocador OU clicar com o botão direito para "adicionar para playlist". Vamos terntar encurtar isso.
+
+Se é um diretório de músicas, já se presume que você irá ouvílas, então imagina que o diretório já presume 2 métodos: 1 - abrir no tocador 2 - adicionar na playlist De maneira que as ações de sistema (reproduzir, adicionar) fiquem já "no gatilho" e apenas as ações internas do sistema de arquivo mesmo (copiar, colar, excluir) fiquem no menu de contexto. Dessa maneira se encurta as ações do sistema e até mesmo facilita a navegação em dispositivos portáteis, por exemplo:
+
+Abrir o gerenciador de arquivos > Navegar até a pasta de papeis de parede [carregar ações: "definir como papel de parede"] > Clique duplo em arquivo (definir como papel de parede)
+
+OU 
+
+Abrir o gerenciador de arquivos > Navegar até a pasta de músicas [carregar ações: 1 - abrir no tocador 2 - adicionar na playlist]  > Duplo clique na música para abrir no tocador OU duplo clique com o "P" pressionado para "adicionar para playlist".
+
+Dessa maneira ações de duplo clique (ou no caso de tocar nos arquivos em caso de dispositivos móveis) se limitariam (e encurtariam) as ações especificamente para aquele contexto.
+
+Ao meu ver isso abriria um imenso leque de opções para a navegação e encurtaria a distância do gerenciador de arquivos para as ações do sistema, hoje em dia ações desse tipo meio que já ocorrem de certa forma em certas aplicações (como por exemplo: todo arquivo na sua pasta do dropbox ou google drive é automaticamente upado na nuvem), o problema é que não existe (ou pelo menos eu ainda não tenho conhecimento de algo assim) tal mecanismo para o gerenciador de arquivos que encurte o processo para outras ações da mesma forma (selecionar papel de parede, enviar por email, ativar compartilhamento. etc).
+
+Ao meu ver isso poderia encurtar e muito o tempo necessário para diversas tarefas, e facilitaria MAIS AINDA em dispositivos móveis E AINDA MAIS em aplicações de terminal.
+
+Como analogia, como geralmente é o processo de baixar vídeos do youtube? Bom, algumas pessoas adicionam uma extensão no navegador, mas a maioria que eu conheço abre o vídeo no youtube, copia a url, abre o open video downloader, cola a url, clica no botão download e depois seleciona onde quer baixar o arquivo...
+
+E se a sua pasta "vídeos do youtube" já baixasse e salvasse como vídeo toda url que você arrastasse pra ela? Ou imagine uma pasta "fotos da família" que toda imagem jogada alí vai ser renomeada para "data:hora".jpg/.png, imagine uma página que ocultasse todo arquivo movido pra ela, enfim... Não usar a pasta apenas como um depósito de arquivos mas como uma interface do sistema mesmo.
+
+
