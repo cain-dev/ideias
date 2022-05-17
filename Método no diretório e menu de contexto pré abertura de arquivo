@@ -31,3 +31,7 @@ Como analogia, como geralmente é o processo de baixar vídeos do youtube? Bom, 
 E se a sua pasta "vídeos do youtube" já baixasse e salvasse como vídeo toda url que você arrastasse pra ela? Ou imagine uma pasta "fotos da família" que toda imagem jogada alí vai ser renomeada para "data:hora".jpg/.png, imagine uma página que ocultasse todo arquivo movido pra ela, enfim... Não usar a pasta apenas como um depósito de arquivos mas como uma interface do sistema mesmo.
 
 
+Associar ação a diretório: 
+                          [youtube-dl [OPTIONS] URL [URL...]
+                          [:pl-create (nome do diretório) (adicionar arquivos do diretório)]
+                          [mv arquivo para arquivodata/arquivohora.png]
